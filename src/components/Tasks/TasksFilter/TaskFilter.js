@@ -22,13 +22,11 @@ const tasksStatus = (tasks = []) => {
 const isDuplicate = (array = [], value = {}) => {
   let duplicate = false;
   for (let i = 0; i < array.length; i++) {
-    console.log(`Task status : ${array[i].id} ---- value ${value.id}`);
     if (array[i].name === value.status) {
       duplicate = true;
       break;
     }
   }
-  console.log(duplicate);
   return duplicate;
 };
 
